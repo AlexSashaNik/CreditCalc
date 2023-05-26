@@ -11,7 +11,7 @@
 
 Сумма кредита, умноженная на выражение: 
 
-<img src="C:\Users\Саша\IdeaProjects\CreditCalc\image (1).png"/>
+<img src="C:\Users\Саша\IdeaProjects\CreditCalc\image (1).png" alt=""/>
 
 
 
