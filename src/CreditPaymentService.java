@@ -1,9 +1,10 @@
 public class CreditPaymentService {
-    public double calculate(double creditAmount, double creditPercentPerYear, int yearNum) {
-        double creditPercentPerMonth = creditPercentPerYear / 12 / 100;
-        double result = creditPercentPerMonth * Math.pow((1 + creditPercentPerMonth), yearNum) / (Math.pow(1 + creditPercentPerMonth, yearNum) - 1);
-        result = result * creditAmount;
-        return (int) result;
+    public int calculate(int period, int credit) {
+        double creditSum;
+        double percent = 9.99;
+        double x = Math.pow((1 + (percent / 12 / 100)), period * 12);
+        creditSum = credit * (percent / 12 / 100) * x / (x - 1);
+        return (int) creditSum;
     }
 
 }
